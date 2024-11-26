@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoptions</title>
+</head>
+<body>
+    <h1>Pet Adoptions</h1>
+    <% if (data.quantity > 1) { %>
+    <h3>You adopted <%= data.quantity %> <%= data.color %> <%= data.pet_type %>s!</h3>
+    <% } else if (data.quantity == 1) { %>
+    <h3>You adopted <%= data.quantity %> <%= data.color %> <%= data.pet_type %>!</h3>
+    <% } else { %>
+    <h3>You didn't adopt a pet :(</h3>
+    <% } %>
+</body>
+</html>
